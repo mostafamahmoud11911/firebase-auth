@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter, createHashRouter } from "react-router-dom";
 import Signup from "./components/Signup";
 import Dashboard from "./components/Dashboard";
 import Signin from "./components/Signin";
@@ -9,7 +9,7 @@ import { Container } from "react-bootstrap";
 import AuthContextProvider from "./context/AuthContext";
 import ProdectedRoute from "./context/ProdectedRoute";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "",
     element: (
